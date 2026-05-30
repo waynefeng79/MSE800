@@ -1,0 +1,40 @@
+<mxfile host="Electron">
+  <diagram name="第 1 页" id="UvxMnvPk3aHujOY-Y_xT">
+    <mxGraphModel dx="934" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p_L91FuoNwyCHHOjDcMi-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Flight" vertex="1">
+          <mxGeometry height="190" width="160" x="320" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="p_L91FuoNwyCHHOjDcMi-2" parent="p_L91FuoNwyCHHOjDcMi-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ no&lt;div&gt;+ src&lt;/div&gt;&lt;div&gt;+ dst&lt;/div&gt;&lt;div&gt;+ depart_time&lt;/div&gt;&lt;div&gt;+ arrival_time&lt;/div&gt;&lt;div&gt;+ status&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="p_L91FuoNwyCHHOjDcMi-3" parent="p_L91FuoNwyCHHOjDcMi-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="160" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="p_L91FuoNwyCHHOjDcMi-4" parent="p_L91FuoNwyCHHOjDcMi-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ set_route()&lt;div&gt;+ set_schedule()&lt;/div&gt;&lt;div&gt;+ flight_duration()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="62" width="160" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="p_L91FuoNwyCHHOjDcMi-5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="DomesticFlight" vertex="1">
+          <mxGeometry height="110" width="160" x="320" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="p_L91FuoNwyCHHOjDcMi-6" parent="p_L91FuoNwyCHHOjDcMi-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+&amp;nbsp;" vertex="1">
+          <mxGeometry height="34" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="p_L91FuoNwyCHHOjDcMi-7" parent="p_L91FuoNwyCHHOjDcMi-5" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="160" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p_L91FuoNwyCHHOjDcMi-8" parent="p_L91FuoNwyCHHOjDcMi-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ is_domestic()&lt;div&gt;+ summary()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="42" width="160" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="p_L91FuoNwyCHHOjDcMi-9" edge="1" parent="1" source="p_L91FuoNwyCHHOjDcMi-5" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" target="p_L91FuoNwyCHHOjDcMi-1" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="330" y="340" as="sourcePoint" />
+            <mxPoint x="490" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
