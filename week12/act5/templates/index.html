@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"] { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>BMI Calculator</h2>
+    
+    <form method="POST">
+        <div class="form-group">
+            <label for="weight">Weight in kilograms:</label>
+            <input type="text" id="weight" name="weight" placeholder="e.g. 70" value="{{ request.form['weight'] or '' }}">
+        </div>
+
+        <div class="form-group">
+            <label for="height">Height in meters:</label>
+            <input type="text" id="height" name="height" placeholder="e.g. 1.75" value="{{ request.form['height'] or '' }}">
+        </div>
+
+        <button type="submit">Calculate BMI</button>
+    </form>
+
+    {% if error %}
+        <div class="error">
+            {{ error }}
+        </div>
+    {% endif %}
+
+    <div class="result-panel {% if bmi != '0.0' %}active{% endif %}">
+        <h4>BMI Calculator Result</h4>
+        <p>Your BMI is: <strong>{{ bmi }}</strong></p>
+        <p>You are classified as: <strong>{{ category }}</strong></p>
+    </div>
+
+    <a href="{{ url_for('index') }}" class="reset-link">Calculate Again</a>
+</div>
+
+</body>
+</html>
